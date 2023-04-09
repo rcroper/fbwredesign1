@@ -1,0 +1,732 @@
+*,
+::after,
+::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* The Header section--------*/
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* Utility Classes*/
+
+.mt{
+    margin-top: 20px;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 95px;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    background-color: black;
+}
+
+.navtoggle{
+    display: inline;
+    height: 40px;
+    width: 40px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    display: none;
+    z-index:2000;
+
+}
+
+.linecontainer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    
+
+}
+
+#linetwo{
+    width: 70%;
+}
+
+.line{
+    width: 95%;
+    background-color: white;
+    height: 2px
+}
+
+.logo{
+    width: 120px;
+}
+
+.navlist{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: .5s ease;
+    
+    
+}
+
+.navlink{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: .5s ease;
+}
+
+.navlink:hover,
+.navlink:focus{
+    color: rgb(197, 67, 67);
+}
+
+
+/* the Hero Section styling here--------------*/
+/* the Hero Section styling here--------------*/
+/* the Hero Section styling here--------------*/
+/* the Hero Section styling here--------------*/
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./imgs/headerbg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+
+
+
+
+
+.hero-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+
+
+.hero h1{
+    font-size:3.5rem;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+}
+
+.hero span{
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.heroctacontainer{
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    
+}
+
+.cta{
+    font-size: 1.2rem;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 50px;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: .5s ease;
+}
+
+.cta:hover,.cta:focus{
+    background-color: white;
+    color: black;
+}
+
+.scrollink{
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s ease;
+    border-radius: 50px;
+}
+
+.scrollimg{
+    transition: .5s ease;
+}
+
+.scrollink:hover,
+.scrollink:focus{
+    transform: translateY(5px);
+
+}
+
+.scrollink:hover .scrollimg,
+.scrollink:focus .scrollimg{
+    fill: rgb(113, 17, 17);
+}
+
+
+/* Info SEction sytles ---------*/
+
+.info{
+    height: 450px;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.titlewrap{
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.infotitle{
+    font-size: 1.4rem;
+    color: white;
+    text-transform: uppercase;
+    
+    
+    text-align: center;
+    font-weight: lighter;
+    line-height: 1.4;
+    
+}
+
+
+.whiteoverlay{
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 10px;
+
+}
+
+.whiteoverlaybottom{
+    height: 2px;
+    width: 60%;
+    background-color: white;
+    margin-top: 10px;
+    
+    
+
+}
+
+
+.col1{
+    background-color: red;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+
+.backimg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    filter: saturate(0) brightness(.2);
+    
+    
+    
+}
+
+.infowrap{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: .5s ease;
+}
+
+.infowrap span{
+    font-size: 1.3rem;
+    margin-top: 10px;
+}
+
+.col1 h2{
+    position: relative;
+    font-size: 1.8rem;
+}
+
+.col1:hover .backimg{
+    transform: scale(1.0255);
+    filter: saturate(1) brightness(.5);
+}
+
+.col1:hover .infowrap{
+    transform: translateY(-5px);
+}
+
+.col2{
+    
+    
+    width: 100%;
+    color: white;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s ease;
+}
+
+
+/* Livestream info section */
+
+.livestreaminfo{
+    height: auto;
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-attachment: fixed;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.787), rgba(0, 0, 0, 0.82)), url(./imgs/milad-fakurian-seA-FPPXL-M-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.livestreaminfo h3{
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1.2;
+    font-weight: lighter;
+}
+
+.socialwraplive{
+    margin-top: 30px;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+   
+}
+
+.liveicon{
+    height: 80px;
+    width: 80px;
+    fill: white;
+    margin: 10px;
+    transition: .5s ease;
+}
+
+.socialwraplive a{
+    transition: .5s ease;
+}
+
+.socialwraplive a:hover,
+.socialwraplive a:focus{
+    opacity: .5;
+}
+
+.socialwraplive a:hover .liveicon,
+.socialwraplive a:focus .liveicon{
+    fill: rgb(218, 93, 93);
+}
+
+
+
+/* Celebrate the Creator Section*/
+
+.celebrate{
+    height: auto;
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom:80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #040404;
+}
+
+.celebrate h3{
+    font-size: 1.6rem;
+    color: white;
+    font-weight: medium;
+}
+
+.celebrate p{
+    text-align: center;
+    width: 67%;
+    color: white;
+    line-height: 1.5;
+    margin-top: 20px;
+
+}
+
+/* Events section */
+
+.events{
+    height: auto;
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+
+}
+
+.eventstitlewrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Swiper Styles*/
+
+.swiper{
+    height: 450px;
+    width: 70%;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.swiper-slide{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.swiper-slide h4{
+    color: white;
+    font-size: 3.4rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.swiper-slide span{
+    font-size: 1.3rem;
+    color: white;
+    margin-top: 10px;
+    font-weight: lighter;
+}
+.swiper-wrapper{
+    height: 100%;
+    width: 100%;
+    
+    
+}
+
+.swiper-button-prev,
+.swiper-button-next{
+    color: white !important;
+    
+}
+
+.swiper-button-prev{
+    margin-left: 20px;
+}
+
+.swiper-button-next{
+    margin-right: 20px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #faf8f8 !important;
+}
+
+
+
+
+#one{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.772), rgba(0, 0, 0, 0.834)), url(./imgs/rikonavt-oEWdQsbRVZk-unsplash.jpg);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#two{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.772), rgba(0, 0, 0, 0.834)), url(./imgs/james-barr-lf8nwCdrx00-unsplash.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#three{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.772), rgba(0, 0, 0, 0.834)), url(./imgs/milad-fakurian-seA-FPPXL-M-unsplash.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* footer sytles*/
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: black;
+    color: white;
+    border-top: 2px solid rgba(227, 226, 226, 0.294);
+}
+
+footer h5{
+    font-size: 1.4rem;
+    
+
+    text-align: center;
+}
+
+
+
+
+/* Media Quieres*/
+
+@media (max-width: 900px) {
+    header{
+        background-color: transparent;
+    }
+
+
+
+    .navlist{
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 140px;
+        flex-direction: column;
+        z-index: 1000;
+        width: 100vw;
+        background-color: black;
+        justify-content: space-evenly;
+        opacity: 0;
+        pointer-events: none;
+        
+    }
+
+    .openmenu{
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .navtoggle{
+        display: block;
+    }
+
+    .navlink{
+        
+        font-size: 1.5rem;
+    }
+    .navitem{
+        margin-bottom: 50px;
+        width: 90vw;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper{
+        width: 100%;
+        max-width: none;
+        border: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-content h1{
+        font-size: 9vw;
+    }
+
+    .hero-content span{
+        font-size: 5vw;
+    }
+
+    .openmenu{
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .info{
+        flex-direction: column;
+        height: auto;
+        display: flex;
+        
+    }
+    
+    .col1{
+        height: 100%;
+        padding: 200px 0;
+
+    }
+
+    .titlewrap{
+        width: 90%;
+    }
+
+    .whiteoverlay{
+        width: 50%;
+    }
+
+    .whiteoverlaybottom{
+        width: 30%;
+    }
+
+    .infotitle{
+        font-size: 1rem;
+        width: 100%;
+        
+    }
+}
+
+@media (max-width: 430px) {
+    .livestreaminfo h3{
+        font-size: 6vw;
+    }
+
+    .openmenu{
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .liveicon{
+        width: 50px;
+        height: 50px;
+    }
+
+    .celebrate h3{
+        width: 50%;
+        text-align: center;
+        font-size: 7vw;
+    }
+
+    .celebrate p{
+        width: 90%;
+        font-size: 5vw;
+    }
+
+    .swiper-slide h4{
+
+    font-size: 8vw;
+    text-align: center;
+    }
+
+    .events{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .eventstitlewrap{
+        margin-top: 30px;
+    }
+}
+@media (max-width: 400px) {
+    .hero-content h1{
+        font-size: 9vw;
+    }
+
+    .openmenu{
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .hero-content{
+        width: 100%;
+    }
+
+    .hero-content span{
+        font-size: 5vw;
+    }
+
+    .heroctacontainer{
+        flex-direction: column;
+        height: 60px;
+        margin-top: 30px;
+        height: auto;
+        width: 90%;
+    }
+
+    .cta{
+        margin-top: 30px;
+        padding: 10px 60px;
+    }
+}
